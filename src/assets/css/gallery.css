@@ -1,0 +1,89 @@
+.galeria-port {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.image-api {
+    width: 18vw;
+    height: 35vh;
+    margin: 10px 5px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 88%;
+    margin-top: 2%;
+    color: #fff;
+}
+
+.logored {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 88%;
+    margin-top: 2%;
+    color: red;
+}
+
+.logoblue {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 88%;
+    margin-top: 2%;
+    color: blue;
+}
+
+svg {
+    align-self: flex-end;
+}
+
+@media(max-width:580px) {
+    .galeria-port {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .image-api {
+        width: 90%;
+        height: 35vh;
+        margin: 10px;
+        z-index: -3;
+    }
+}
+
+@media (min-width: 580px) and (max-width:997px) {
+    .galeria-port {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .image-api {
+        width: 43vw;
+        height: 28vh;
+        margin: 10px 5px;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        ;
+
+    }
+}
